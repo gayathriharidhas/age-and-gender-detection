@@ -1,0 +1,128 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href='/viewusers'>View Users</a>
+    <a href="/viewfeedback">viewfeedback</a> 
+
+</body>
+</html> -->
+
+
+
+
+{%include 'admin_header.html'%}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(static/assets/img/futuristic-business-scene-with-ultra-modern-ambiance.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animated fadeInDown"><span>FACE ANALYSIS: Age and Gender prediction</span></h2>
+              <p class="animated fadeInUp">Explore our AI-powered age and gender detection tool for instant insights from your uploaded images. Uncover demographic details with precision and ease on our user-friendly home page.</p>
+      
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+  
+  <!-- End Hero -->
+
+  <main id="main">
+    
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container-fluid">
+  
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+              <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
+            </div>
+  
+            <div class="col-xl-5 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+              <h3>Age and gender prediction</h3>
+              <p>Step into our age and gender detection website, where advanced algorithms meticulously analyze facial characteristics to estimate age and gender with exceptional precision. Whether for demographic exploration, targeted marketing endeavors, or sheer curiosity, our platform delivers rapid and dependable insights gleaned from uploaded images. Embrace the transformative potential of AI-driven analysis in unraveling the intricacies of human demographics with us.</p>
+  
+              <div class="icon-box">
+                <div class="icon"><i class="Step"> 1</i></div>
+                <h4 class="title"><a href="">Register</a></h4>
+                <p class="description">Create an account by providing necessary details such as username, email, and password to access the website's features.</p>
+              </div>
+  
+              <div class="icon-box">
+                <div class="icon"><i class="Step">2</i></div>
+                <h4 class="title"><a href="">Login</a></h4>
+                <p class="description">Sign in with your registered username and password to gain access to your account and its functionalities.</p>
+              </div>
+  
+              <div class="icon-box">
+                <div class="icon"><i class="step">3</i></div>
+                <h4 class="title"><a href="">Upload image</a></h4>
+                <p class="description">Select an image containing a face from your device and upload it to the website for analysis.</p>
+              </div>
+  
+              <div class="icon-box">
+                <div class="icon"><i class="step">4</i></div>
+                <h4 class="title"><a href="">Submit</a></h4>
+                <p class="description">Initiate the prediction process by submitting the uploaded image to receive the AI-generated prediction for age and gender.</p>
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End About Section -->
+
+
+  <!-- ======= Cta Section ======= -->
+  <section id="cta" class="cta">
+    <div class="container">
+
+      <div class="text-center">
+        <h3>Age estimation</h3>
+        <p> Landmarks such as the location of the pupils, eye corners, lip boundaries, etc. change with age. Our algorithm was trained on a large database of different faces to detect the approximate age of a person based on such features.</p>
+
+          <p>Age estimation accuracy up to +/- 5 years</p>
+          <p>Accuracy depends on conditions such as lighting, head pose, etc.</p>
+
+      </div>
+
+    </div>
+  </section>
+  <ul></ul>
+  <section id="cta" class="cta">
+    <div class="container">
+
+      <div class="text-center">
+        <h3>Gender estimation</h3>
+        <p> There are certain common features in human faces that distinguish male faces from female ones. FaceAnalysis uses advanced machine learning techniques to provide you with gender detection.</p>
+
+          <p>Estimate whether a person is female or male in real time</p>
+          <p>Use gender estimation to target your products, content or ads to specific gender</p>
+          
+      </div>
+
+    </div>
+  </section>
+  
+  
+  <!-- End Cta Section -->
+
+
+{%include 'footer.html'%}

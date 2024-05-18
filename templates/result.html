@@ -1,0 +1,126 @@
+{%include 'user_header.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image: url('static/rm373batch2-08.jpg');background-size: cover;" >
+    
+<br><br><br><br><br><br><br><br><br>
+<center>
+    <h1 style="color: aqua;"><span style="color: rgb(22, 143, 143);"> </span>Upload Image</h1>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        form {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 85%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff12;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+   
+        }
+
+        th {
+            background-color: #2e95b12f;
+            color: #ffffff;
+        }
+
+        tr:hover {
+            background-color: rgba(34, 31, 70, 0.108);
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            table {
+                width: 1200px;
+            }
+
+            th,
+            td {
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+    
+  <form action="" method="post" enctype="multipart/form-data" >
+    <table class="" style="width: 300px;"  >
+
+        <tr>
+            <th>name</th>
+            <td><input type="text" name="name"></td>
+        </tr>
+    
+        <tr>
+            <th>image</th>
+            <td><input type="file" name="image"></td>
+        </tr>
+
+        <tr>
+            <th></th>
+            <td><input type="submit" class="btn btn-success" name="submit"></td>
+        </tr>
+    </table>
+  </form>
+<br><br>
+  <form action="" method="post">
+    <table>
+        <a href="/live" class="btn btn-info">LIVE DETECTION</a>
+    </table>
+  </form>
+  {%if 'predict_value'%}
+<section style="margin-top: -50px;">
+    
+
+  <td><img src="{{path}}" alt="" ></td>
+  <h2 style="color: #ffff;">{{name}}</h2>
+<h2 style="color: #ffff;">{{predict_value}}</h2>
+
+</section>
+  {%endif%}
+        
+    
+</center>
+</body>
+</html>
+<br><br><br><br><br><br><br><br>
+{%include 'footer.html'%}
+
+
+

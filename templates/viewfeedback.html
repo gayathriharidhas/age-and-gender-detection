@@ -1,0 +1,37 @@
+{%include 'admin_header.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><br><br><br><br><br><br><br>
+    <center>
+        <h1>View Feedback</h1>
+        <table class="table" style="width: 1200px;">
+    <thead class="table-dark">
+        <tr style="background-color: rgb(36, 33, 33);">
+            <th>user Name</th>
+            <th>phone no</th>
+            <th>email</th>
+            <th>review description</th>
+        </tr>
+    </thead>
+        
+    {% for i in data['key'] %}
+        <tr> 
+            <td>{{i['name']}}</td>
+            <td>{{i['phone_no']}}</td>
+            <td>{{i['email']}}</td>
+            <td>{{i['reviw_desp']}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    </center>
+    <br><br><br><br><br><br>
+
+</body>
+</html>
+{%include 'footer.html'%}

@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <form action="" method="post">
+    <table>
+        <tr>
+            <th>name</th>
+            <td><input type="text" name="name"></td>
+        </tr>
+    
+        <tr>
+            <th>phone_no</th>
+            <td><input type="number" name="phone_no"></td>
+        </tr>
+    
+        <tr>
+            <th>email</th>
+            <td><input type="text" name="email"></td>
+        </tr>
+
+        <tr>
+            <th>username</th>
+            <td><input type="text" name="username"></td>
+        </tr>
+
+        <tr>
+            <th>password</th>
+            <td><input type="password" name="password"></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" name="submit"></td>
+        </tr>
+   
+
+    </table>
+   </form>
+
+</body>
+</html> -->
+
+
+<html>
+<head>
+<title> Registration </title>
+
+</head>
+ 
+<body>
+<h3> REGISTRATION </h3>
+
+<form method="post">
+<table align="center" cellpadding = "10">
+ 
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td> NAME</td>
+<td><input type="text" name="name" maxlength="30"/>
+</td>
+</tr>
+ 
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>PHONE NUMBER</td>
+<td><input type="tel" name="phone_no" pattern="[0-9]{10}" required>
+</td>
+</tr>
+ 
+ 
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="email" maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+</td>
+</tr>
+ 
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>USERNAME</td>
+<td>
+<input type="text" name="username" maxlength="10" />
+</td>
+</tr>
+ 
+<tr>
+<td>PASSWORD</td>
+<td>
+<input type="password" name="password" maxlength="10" title="(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.\W).{8,}" />
+</td>
+</tr>
+
+ 
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" name="submit" value="Submit">
+</td>
+</tr>
+</table>
+ 
+</form>
+ 
+</body>
+</html>
+
+
+<style>
+
+h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:SlateBlue;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri; 
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:center; 
+  background-color: SlateBlue; 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}
+</style>
+
+
+
